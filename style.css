@@ -1,48 +1,121 @@
-body{
+body {
     margin: 0;
-    background-image: url(wallpaper4.jpeg);
+    background-image: url("wallpaper4.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-}
-
-.container{
+    
+  }
+  
+  .container {
     background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    max-width: 1100px;
+    border-top: 10px solid rgb(28, 62, 255);
+    border-bottom: 10px solid rgb(28, 62, 255);
+    height: 100%;
     min-height: 100vh;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-}
-
-
-.task-area{
+  }
+  .input-area {
+    position: relative;
+  }
+  .task-input {
+    transition: padding-top 0.2s ease, margin-top 0.2s ease;
+    width: 80%;
+    border: none;
+    border: 1px solid rgb(0, 153, 255);
+  }
+ 
+  
+ 
+  
+  .button-add {
+    border: none;
+    background-color: rgb(255, 156, 156);
+    box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+  }
+  .button-add:hover {
+    background-color: cadetblue;
+  }
+  .button-add:active {
+    background-color: #f3f4f6;
+    box-shadow: -1px 2px 5px rgba(81, 41, 10, 0.15),
+      0px 1px 1px rgba(81, 41, 10, 0.15);
+    transform: translateY(0.125rem);
+  }
+  
+  .task-list-container {
     border: 1px solid lightgray;
-}
-
-
-.task-tabs{
+    margin-top: 1em;
+    position: relative;
+  }
+  .tab-type {
     display: flex;
     border-bottom: 1px solid lightgray;
-    position: relative;
-}
-
-.task-tabs div{
+  }
+  
+  .tab-type div {
     padding: 1em;
-}
-
-#under-line{
-    height: 4px;
-    background-color: aqua;
+    cursor: pointer;
+  }
+  
+  #tab-underline {
+    background-color: rgb(0, 123, 255);
+    height: 4px !important;
     position: absolute;
-    width: 80px;
-    left: 0px;
     top: 52px;
+    left: 0px;
+    width: 48px;
+    transition: 0.5s;
     padding: 0px;
-}
-
-.task{
+  }
+  
+  .task {
     display: flex;
     justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid lightgray;
+    position: relative;
+  }
+  .task span {
     padding: 1em;
-}
-
-.task-done{
+  }
+  .button-box {
+    display: flex;
+  }
+  
+  .button-box button {
+    height: 100%;
+    border: none;
+    width: 5em;
+    margin: 0;
+    background-color: white;
+    transition: 0.5s;
+  }
+  .button-box button :active {
+    position: relative;
+    top: 2px;
+  }
+  
+  .button-box button:first-child:hover {
+    background-color: rgb(0, 201, 84);
+  }
+  .button-box button:nth-child(2):hover {
+    background-color: rgb(255, 0, 0, 0.3);
+  }
+  
+  .fa-check {
+    color: rgb(0, 158, 3);
+  }
+  
+  .fa-trash {
+    color: red;
+  }
+  .fa-undo-alt {
+    color: lightslategray;
+  }
+  
+  .task-done {
     text-decoration: line-through;
-}
+    background-color: lightgray;
+    transition: 0.5s;
+  }
