@@ -1,18 +1,19 @@
 body {
     margin: 0;
-    background-image: url("wallpaper4.jpeg");
+    background-image: url("wallpaper5.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: "Quicksand", sans-serif;
     
   }
   
   .container {
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    max-width: 1100px;
-    border-top: 10px solid rgb(28, 62, 255);
-    border-bottom: 10px solid rgb(28, 62, 255);
-    height: 100%;
+    max-width: 800px;
+    border-top: 10px solid rgb(19, 0, 129);
+    border-bottom: 10px solid rgb(40, 6, 86);
+    height: 90%;
     min-height: 100vh;
   }
   .input-area {
@@ -22,7 +23,7 @@ body {
     transition: padding-top 0.2s ease, margin-top 0.2s ease;
     width: 80%;
     border: none;
-    border: 1px solid rgb(0, 153, 255);
+    border: 1px solid rgb(182, 120, 148);
   }
  
   
@@ -34,7 +35,7 @@ body {
     box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
   }
   .button-add:hover {
-    background-color: cadetblue;
+    background-color: rgb(182, 120, 148);
   }
   .button-add:active {
     background-color: #f3f4f6;
@@ -59,7 +60,7 @@ body {
   }
   
   #tab-underline {
-    background-color: rgb(0, 123, 255);
+    background-color: rgb(114, 69, 133);
     height: 4px !important;
     position: absolute;
     top: 52px;
@@ -97,10 +98,10 @@ body {
   }
   
   .button-box button:first-child:hover {
-    background-color: rgb(0, 201, 84);
+    background-color: rgb(1, 200, 1);
   }
   .button-box button:nth-child(2):hover {
-    background-color: rgb(255, 0, 0, 0.3);
+    background-color: rgb(255, 110, 110);
   }
   
   .fa-check {
